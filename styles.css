@@ -47,6 +47,7 @@ body {
 .controls button:hover {
     color: var(--clr-text);
     background: var(--clr-simplified);
+    outline: 1px solid var(--clr-text);
     transition: 0.5s;
 }
 
@@ -56,7 +57,6 @@ body {
 }
 
 .current:hover {
-    outline: 1px solid var(--clr-text);
     transition: 0.5s;
 }
 
