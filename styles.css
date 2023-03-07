@@ -1,0 +1,90 @@
+:root {
+    --clr-bg: rgb(255, 255, 255);
+    --clr-text: rgb(24, 24, 24);
+    --clr-simplified: rgb(227, 227, 227);
+    --clr-simplified-text: rgb(58, 58, 58);
+    --clr-line: rgb(149, 149, 149);
+}
+
+*, *::before, *::after {
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    width: 100vw;
+    color: var(--clr-text);
+    background: var(--clr-bg);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper section {
+    width: clamp(32ch, 90%, 72ch);
+}
+
+.wrapper p {
+    line-height: 1.75em;
+}
+
+.controls {
+    margin: 4em 0em;
+}
+
+.controls button {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: var(--clr-text);
+    background: var(--clr-simplified);
+    transition: 0.5s;
+}
+
+.current {
+    color: var(--clr-text);
+    background: var(--clr-simplified);
+}
+
+.current:hover {
+    outline: 1px solid var(--clr-text);
+    transition: 0.5s;
+}
+
+.simplified {
+    padding: 1em;
+    border-radius: 8px;
+    color: var(--clr-simplified-text);
+    background:  var(--clr-simplified);
+    line-height: 0.75em;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background:  var(--clr-simplified);
+    margin: 2.5em 0em;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    color: var(--clr-bg);
+    background: var(--clr-simplified-text);
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 0.5em 1em;
+}
